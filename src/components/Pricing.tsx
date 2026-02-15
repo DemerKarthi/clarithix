@@ -6,7 +6,7 @@ const Pricing = () => {
     {
       name: 'MERN Core Program',
       duration: '2 Months',
-      monthlyPrice: '₹2,499',
+      monthlyPrice: '₹3,499',
       fullPrice: '₹6,499',
       features: [
         'Live Classes & Doubt Support',
