@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
   title?: string;
@@ -23,7 +23,7 @@ const SEO = ({
   const canonical = canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl;
 
   return (
-    <Helmet>
+    <header>
       {/* Primary Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="title" content={fullTitle} />
@@ -55,7 +55,7 @@ const SEO = ({
       {/* Additional SEO */}
       <meta name="theme-color" content="#0B1220" />
       <meta name="msapplication-TileColor" content="#0B1220" />
-    </Helmet>
+    </header>
   );
 };
 
