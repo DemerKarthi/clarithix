@@ -12,7 +12,7 @@ export default async function handler(req: any, res: any) {
   try {
     await resend.emails.send({
       from: "Clarithix <onboarding@resend.dev>", 
-      to: "demerkarthi@gmail.com",
+      to: ["demerkarthi@gmail.com", "abiabinaya1206@gmail.com"],
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <h2>New Message from Clarithix Website</h2>
