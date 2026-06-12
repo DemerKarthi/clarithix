@@ -21,7 +21,7 @@ export interface EnrollmentResponse {
 export const submitEnrollment = async (payload: EnrollmentPayload): Promise<EnrollmentResponse> => {
   // TODO: Connect to Google Apps Script endpoint for Google Sheets integration
   // const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_SCRIPT_WEB_APP_URL';
-  
+
   // Prepare payload for future CRM / Lead Management
   const enhancedPayload = {
     ...payload,
@@ -33,7 +33,7 @@ export const submitEnrollment = async (payload: EnrollmentPayload): Promise<Enro
   try {
     // Simulated API call delay
     await new Promise(resolve => setTimeout(resolve, 1500));
-    
+
     // Uncomment and implement when endpoint is ready:
     /*
     const response = await fetch(GOOGLE_SCRIPT_URL, {
@@ -48,6 +48,7 @@ export const submitEnrollment = async (payload: EnrollmentPayload): Promise<Enro
       throw new Error('Failed to submit enrollment');
     }
     */
+    console.log(enhancedPayload)
 
     return {
       success: true,
