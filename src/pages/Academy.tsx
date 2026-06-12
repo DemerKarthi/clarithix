@@ -1,6 +1,10 @@
 import Hero from '../components/Hero';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
+import LearningJourney from '../components/LearningJourney';
+import ProjectShowcase from '../components/ProjectShowcase';
+import FAQ from '../components/FAQ';
+import CTA from '../components/CTA';
 
 const Academy = () => {
   return (
@@ -150,6 +154,10 @@ const Academy = () => {
         </div>
       </Section>
 
+      <LearningJourney />
+      
+      <ProjectShowcase />
+
       <Section
         title="Project-Based Learning"
         subtitle="Build Real Applications"
@@ -205,6 +213,20 @@ const Academy = () => {
           </div>
         </div>
       </Section>
+
+      <FAQ />
+
+      <CTA
+        title="Ready To Build Real Applications?"
+        primaryButton={{
+          text: 'Enroll Now',
+          link: '/enroll',
+        }}
+        secondaryButton={{
+          text: 'Talk To Mentor',
+          link: '/contact',
+        }}
+      />
     </>
   );
 };

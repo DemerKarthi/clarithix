@@ -58,6 +58,11 @@ const Footer = () => {
             <h3 className="text-primary-text font-semibold mb-6 text-lg">Connect</h3>
             <ul className="space-y-3 text-muted-text text-base">
               <li>
+                <a href="mailto:hello@clarithix.com" className="hover:text-primary-text transition-colors duration-300">
+                  hello@clarithix.com
+                </a>
+              </li>
+              <li>
                 <a href="mailto:demerkarthi@gmail.com" className="hover:text-primary-text transition-colors duration-300">
                   demerkarthi@gmail.com
                 </a>

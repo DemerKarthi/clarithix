@@ -5,6 +5,7 @@ import CTA from '../components/CTA';
 import Pricing from '../components/Pricing';
 import Trust from '../components/Trust';
 import SEO from '../components/SEO';
+import ClarithixMethod from '../components/ClarithixMethod';
 
 const Home = () => {
   return (
@@ -155,6 +156,8 @@ const Home = () => {
           ))}
         </div>
       </Section>
+
+      <ClarithixMethod />
 
       <Pricing />
 
